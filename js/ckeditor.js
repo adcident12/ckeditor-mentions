@@ -3,6 +3,7 @@ $( document ).ready(function() {
         var data = CKEDITOR.instances.editor.getData();
         if( data ) {
             console.log( data );
+            $( "#append-posts" ).append( data );
         }else {
             alert("Please fill in something!.");
         }
